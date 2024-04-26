@@ -4,7 +4,7 @@ import Dots from "../assets/Dots.png";
 
 const Main = () => {
     return (
-        <div className="main">
+        <div className="main" id="home">
             <div className="textContainer">
                 <h1>
                     Alishase is a <span className="symb">web designer</span> and{" "}
