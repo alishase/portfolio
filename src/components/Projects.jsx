@@ -3,7 +3,7 @@ import dots from "../assets/Dots.png";
 import Rectangle from "../assets/Rectangle2.png";
 const Projects = ({ cards }) => {
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <img src={dots} alt="" className="bagDetail" />
             <img src={dots} alt="" className="bagDetailR" />
             <div className="upper">

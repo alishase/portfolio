@@ -2,8 +2,8 @@ import defaultLogo from "../assets/default.svg";
 
 const Navbar = () => {
     const panelItems = [
-        { name: "home", url: "#" },
-        { name: "projects", url: "#" },
+        { name: "home", url: "#home" },
+        { name: "projects", url: "#projects" },
         { name: "contacts", url: "#" },
     ];
 
