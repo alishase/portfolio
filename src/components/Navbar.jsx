@@ -6,7 +6,16 @@ import ProjectsBtn from "./ProjectsBtn";
 // import { IoClose, IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
+<<<<<<< HEAD
     const [opened, setOpened] = useState(false);
+=======
+    const panelItems = [
+        { name: "home", url: "#home" },
+        { name: "projects", url: "#projects" },
+        { name: "contacts", url: "#" },
+    ];
+
+>>>>>>> fecd039af8c8f86506c4cd2532890123fd0a8b6d
     return (
         <>
             <div className="navbar">
