@@ -22,7 +22,7 @@ const Main = () => {
                 <div className="imageChar">
                     <img src={logotype} alt="" className="logotype" />
                     <img src={Dots} alt="" className="dots" />
-                    <img src={CharcterImg} alt="" />
+                    <img src={CharcterImg} alt="" className="char" />
                 </div>
 
                 <p>
