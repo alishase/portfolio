@@ -46,6 +46,18 @@ html,
 * {
     scroll-behavior: smooth;
 }
+.fof--cont {
+    margin-top: 200px;
+}
+.fof {
+    text-align: center;
+    font-size: 28px;
+}
+
+p.fof {
+    color: #abb2bf;
+    font-size: 20px;
+}
 
 /* Navbar */
 
@@ -91,7 +103,7 @@ ul.defaultNav {
     width: 30%;
 }
 
-.navbar li a {
+.navbar li p {
     color: #abb2bf;
     text-decoration: none;
     font-size: 16px;
@@ -100,7 +112,7 @@ ul.defaultNav {
     cursor: pointer;
 }
 
-.navbar li a:hover {
+.navbar li p:hover {
     color: white;
 }
 
@@ -128,7 +140,7 @@ ul.defaultNav {
 
 .main {
     margin-top: 50px;
-    margin: 60px 100px;
+    margin: 100px 100px;
     display: flex;
     justify-content: space-around;
 }
@@ -676,6 +688,7 @@ p.copyright {
         font-weight: 200;
         padding: 35px 60px;
         font-size: 30px;
+        color: #fff;
     }
 
     .main {

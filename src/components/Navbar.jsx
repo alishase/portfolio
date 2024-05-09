@@ -3,7 +3,7 @@ import defaultLogo from "../assets/default.svg";
 import ContactBtn from "./ContactBtn";
 import Home from "./Home";
 import ProjectsBtn from "./ProjectsBtn";
-// import { IoClose, IoMenu } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [opened, setOpened] = useState(false);
@@ -22,9 +22,15 @@ const Navbar = () => {
                     <h1>Alishase</h1>
                 </div>
                 <ul className="defaultNav">
-                    <Home />
-                    <ProjectsBtn />
-                    <ContactBtn />
+                    <Link to="/portfolio/home">
+                        <Home />
+                    </Link>
+                    <Link to="/portfolio/projects">
+                        <ProjectsBtn />
+                    </Link>
+                    <Link to="/portfolio/contact">
+                        <ContactBtn />
+                    </Link>
                 </ul>
 
                 {opened ? (
@@ -83,9 +89,21 @@ const Navbar = () => {
             </div>
             {opened ? (
                 <ul className={`mobileNav ${opened ? "visible" : ""}`}>
-                    <Home />
-                    <ProjectsBtn />
-                    <ContactBtn />
+                    <li>
+                        <Link to="/portfolio/home">
+                            <Home />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/portfolio/projects">
+                            <ProjectsBtn />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/portfolio/contact">
+                            <ContactBtn />
+                        </Link>
+                    </li>
                 </ul>
             ) : (
                 ""

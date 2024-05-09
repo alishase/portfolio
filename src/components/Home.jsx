@@ -1,10 +1,10 @@
 const Home = () => {
     return (
         <li>
-            <a>
+            <p>
                 <span className="symb">#</span>
                 home
-            </a>
+            </p>
         </li>
     );
 };

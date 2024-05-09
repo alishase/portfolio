@@ -1,10 +1,10 @@
 const ProjectsBtn = () => {
     return (
         <li>
-            <a>
+            <p>
                 <span className="symb">#</span>
                 projects
-            </a>
+            </p>
         </li>
     );
 };

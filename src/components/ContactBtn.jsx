@@ -1,10 +1,10 @@
 const ContactBtn = () => {
     return (
         <li>
-            <a>
+            <p>
                 <span className="symb">#</span>
                 contact
-            </a>
+            </p>
         </li>
     );
 };
