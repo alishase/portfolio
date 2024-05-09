@@ -15,7 +15,7 @@ const Main = () => {
                     creativity
                 </p>
                 <a className="primaryBtn" href="#">
-                    Contact me!!
+                    Contact me!
                 </a>
             </div>
             <div className="imageContainer">

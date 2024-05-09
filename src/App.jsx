@@ -7,6 +7,9 @@ import iteen from "../src/assets/iteen.png";
 import foodapp from "../src/assets/Foodapp.png";
 import todoapp from "../src/assets/todoapp.png";
 import Skills from "./components/Skills";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
     const cards = [
@@ -40,6 +43,9 @@ function App() {
             <Quote />
             <Projects cards={cards} />
             <Skills />
+            <About />
+            <Contact />
+            <Footer />
         </>
     );
 }
