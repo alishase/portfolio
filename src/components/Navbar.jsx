@@ -22,13 +22,13 @@ const Navbar = () => {
                     <h1>Alishase</h1>
                 </div>
                 <ul className="defaultNav">
-                    <Link to="/portfolio/home">
+                    <Link to="/home">
                         <Home />
                     </Link>
-                    <Link to="/portfolio/projects">
+                    <Link to="/projects">
                         <ProjectsBtn />
                     </Link>
-                    <Link to="/portfolio/contact">
+                    <Link to="/contact">
                         <ContactBtn />
                     </Link>
                 </ul>
@@ -89,15 +89,15 @@ const Navbar = () => {
             </div>
             {opened ? (
                 <ul className={`mobileNav ${opened ? "visible" : ""}`}>
-                    <Link to="/portfolio/home">
+                    <Link to="/home">
                         <Home />
                     </Link>
 
-                    <Link to="/portfolio/projects">
+                    <Link to="/projects">
                         <ProjectsBtn />
                     </Link>
 
-                    <Link to="/portfolio/contact">
+                    <Link to="/contact">
                         <ContactBtn />
                     </Link>
                 </ul>

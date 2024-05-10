@@ -15,7 +15,7 @@ const Projects = ({ cards }) => {
                         </h1>
                         <hr className="upperSection" />
                     </div>
-                    <Link to="/portfolio/projects/" className="viewAll">
+                    <Link to="/projects" className="viewAll">
                         View all ~~{">"}
                     </Link>
                 </div>
@@ -26,7 +26,9 @@ const Projects = ({ cards }) => {
                 </div>
             </div>
             <div className="primaryBtn mobile">
-                <Link to="/portfolio/projects/">View all projects</Link>
+                <Link to="/projects" style={{ color: "#fff" }}>
+                    View all projects
+                </Link>
             </div>
         </div>
     );

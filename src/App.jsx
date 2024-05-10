@@ -54,15 +54,6 @@ function App() {
                     <Route path="*" element={<NoPage />} />
                 </Routes>
             </HashRouter>
-            {/* <Navbar />
-            <MainCont />
-            <Quote />
-            <Projects cards={cards} />
-            <Skills />
-            <About />
-            <Contact />
-            <Footer /> */}
-            {/* <RouterProvider router={router} /> */}
         </>
     );
 }
