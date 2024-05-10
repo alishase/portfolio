@@ -45,16 +45,10 @@ function App() {
             <HashRouter>
                 <Routes>
                     <Route index element={<HomePage cards={cards} />} />
+                    <Route path="/" element={<HomePage cards={cards} />} />
+                    <Route path="/home" element={<HomePage cards={cards} />} />
                     <Route
-                        path="/portfolio/"
-                        element={<HomePage cards={cards} />}
-                    />
-                    <Route
-                        path="/portfolio/home"
-                        element={<HomePage cards={cards} />}
-                    />
-                    <Route
-                        path="/portfolio/projects"
+                        path="/projects"
                         element={<ProjectsApp cards={cards} />}
                     />
                     <Route path="*" element={<NoPage />} />
