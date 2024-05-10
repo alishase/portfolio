@@ -50,9 +50,7 @@ body {
 * {
     scroll-behavior: smooth;
 }
-.fof--cont {
-    margin-top: 200px;
-}
+
 .fof {
     text-align: center;
     font-size: 28px;
@@ -839,5 +837,13 @@ div.body {
         width: 100%;
         align-items: center;
         margin-top: 30px;
+    }
+
+    .projects--cardsContainer {
+        column-count: 1;
+    }
+
+    .projects--cardsContainer .projectCard {
+        margin-bottom: 30px;
     }
 }

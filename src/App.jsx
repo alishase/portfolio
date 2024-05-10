@@ -36,7 +36,7 @@ function App() {
             skills: "React HTML CSS JS ",
             title: "ToDo app",
             description: "App that helps you manage you tasks",
-            url: "#",
+            url: "https://alishase.github.io/todoapp/",
         },
     ];
 
