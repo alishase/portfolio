@@ -89,21 +89,17 @@ const Navbar = () => {
             </div>
             {opened ? (
                 <ul className={`mobileNav ${opened ? "visible" : ""}`}>
-                    <li>
-                        <Link to="/portfolio/home">
-                            <Home />
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/portfolio/projects">
-                            <ProjectsBtn />
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/portfolio/contact">
-                            <ContactBtn />
-                        </Link>
-                    </li>
+                    <Link to="/portfolio/home">
+                        <Home />
+                    </Link>
+
+                    <Link to="/portfolio/projects">
+                        <ProjectsBtn />
+                    </Link>
+
+                    <Link to="/portfolio/contact">
+                        <ContactBtn />
+                    </Link>
                 </ul>
             ) : (
                 ""

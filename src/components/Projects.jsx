@@ -1,6 +1,7 @@
 import Card from "./Card.jsx";
 import dots from "../assets/Dots.png";
 import Rectangle from "../assets/Rectangle2.png";
+import { Link } from "react-router-dom";
 const Projects = ({ cards }) => {
     return (
         <div className="projects--section">
@@ -14,9 +15,9 @@ const Projects = ({ cards }) => {
                         </h1>
                         <hr className="upperSection" />
                     </div>
-                    <a href="#" className="viewAll">
+                    <Link to="/portfolio/projects/" className="viewAll">
                         View all ~~{">"}
-                    </a>
+                    </Link>
                 </div>
                 <div className="cardsContainer">
                     {cards.map((card, index) => (
@@ -24,7 +25,9 @@ const Projects = ({ cards }) => {
                     ))}
                 </div>
             </div>
-            <div className="primaryBtn">View all projects</div>
+            <div className="primaryBtn mobile">
+                <Link to="/portfolio/projects/">View all projects</Link>
+            </div>
         </div>
     );
 };

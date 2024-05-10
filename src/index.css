@@ -43,6 +43,10 @@ html,
     overflow-x: hidden;
 }
 
+body {
+    margin-top: 50px;
+}
+
 * {
     scroll-behavior: smooth;
 }
@@ -78,7 +82,7 @@ p.fof {
 
 .navbar .logo {
     padding: 10px 0px;
-    padding-left: 60px;
+    padding-left: 10%;
     display: flex;
     align-items: center;
 }
@@ -139,8 +143,7 @@ ul.defaultNav {
 /* Main */
 
 .main {
-    margin-top: 50px;
-    margin: 100px 100px;
+    margin: 30px 100px;
     display: flex;
     justify-content: space-around;
 }
@@ -385,6 +388,10 @@ ul.defaultNav {
     margin-top: 15px;
 }
 
+.primaryBtn.mobile {
+    display: none;
+}
+
 .projects .bagDetail {
     position: absolute;
     left: 1%;
@@ -396,10 +403,6 @@ ul.defaultNav {
     right: 2%;
     bottom: 150px;
     transform: scale(1.2);
-}
-
-.projects--section .primaryBtn {
-    display: none;
 }
 
 .skills {
@@ -647,6 +650,33 @@ p.copyright {
     padding-bottom: 60px;
 }
 
+/* PROJECTS PAGE */
+
+div.body {
+    background-color: #282c33;
+}
+
+.projects--main {
+    padding: 30px 12%;
+}
+
+.upper--footer {
+    margin-bottom: 50px;
+}
+
+.projects--cardsContainer {
+    margin: auto;
+    width: 100%;
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.projects--cardsContainer .projectCard {
+    break-inside: avoid;
+    width: 100%;
+    margin: 0;
+}
+
 /* Landscape phones and down */
 @media (max-width: 768px) {
     .navbar .logo {
@@ -677,7 +707,6 @@ p.copyright {
         z-index: 20;
         height: 100%;
         background-color: #242424;
-        padding-top: 60px;
         transition: all 0.2s;
     }
 
@@ -731,7 +760,7 @@ p.copyright {
         align-items: stretch;
         text-align: center;
     }
-    .projects--section .primaryBtn {
+    .projects--section .primaryBtn.mobile {
         display: inline-block;
     }
 

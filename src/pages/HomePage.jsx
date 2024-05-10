@@ -10,37 +10,13 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-function App() {
-    const cards = [
-        {
-            img: iteen,
-            skills: "HTML CSS JS Responsive design",
-            title: "Web-technology landing",
-            description: "Landing for web-technology courses",
-            url: "#",
-        },
-        {
-            img: foodapp,
-            skills: "React HTML CSS JS API calls",
-            title: "Recipe Food App",
-            description: "App that finds food recipes for you",
-            url: "#",
-        },
-        {
-            img: todoapp,
-            skills: "React HTML CSS JS ",
-            title: "ToDo app",
-            description: "App that helps you manage you tasks",
-            url: "#",
-        },
-    ];
-
+function HomePage(props) {
     return (
         <>
             <Navbar />
             <MainCont />
             <Quote />
-            <Projects cards={cards} />
+            <Projects cards={props.cards} />
             <Skills />
             <About />
             <Contact />
@@ -49,4 +25,4 @@ function App() {
         </>
     );
 }
-export default App;
+export default HomePage;

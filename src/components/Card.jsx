@@ -6,7 +6,7 @@ const Card = ({ card }) => {
             <div className="cardText">
                 <h3>{card.title}</h3>
                 <p>{card.description}</p>
-                <a href="#" className="primaryBtn">
+                <a href={card.url} className="primaryBtn" target="_blank">
                     Visit
                 </a>
             </div>
