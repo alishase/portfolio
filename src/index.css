@@ -43,10 +43,6 @@ html,
     overflow-x: hidden;
 }
 
-body {
-    margin-top: 50px;
-}
-
 * {
     scroll-behavior: smooth;
 }
@@ -69,7 +65,7 @@ p.fof {
 
 .navbar {
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 30;
@@ -349,7 +345,6 @@ ul.defaultNav {
     width: 100%;
     height: auto;
     filter: brightness(0.7);
-    border-bottom: 1px solid #abb2bf;
     transition-duration: 0.2s;
 }
 
@@ -361,7 +356,7 @@ ul.defaultNav {
     margin: 0;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #abb2bf;
+    border-bottom: 2px solid #abb2bf;
     color: #abb2bf;
 }
 
@@ -384,6 +379,18 @@ ul.defaultNav {
 .projectCard a {
     box-sizing: border-box;
     margin-top: 15px;
+}
+
+.projectCard a.img--link {
+    box-sizing: content-box;
+    margin: 0;
+}
+
+.projectCard a.img--link img {
+    border-bottom: 2px solid #abb2bf;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .primaryBtn.mobile {
@@ -652,10 +659,12 @@ p.copyright {
 
 div.body {
     background-color: #282c33;
+    position: relative;
 }
 
 .projects--main {
-    padding: 30px 12%;
+    padding: 30px 11%;
+    position: relative;
 }
 
 .upper--footer {
@@ -665,18 +674,69 @@ div.body {
 .projects--cardsContainer {
     margin: auto;
     width: 100%;
-    column-count: 3;
-    column-gap: 20px;
+    display: grid;
+    gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
 }
 
 .projects--cardsContainer .projectCard {
-    break-inside: avoid;
     width: 100%;
     margin: 0;
+    background-color: #282c33;
+    justify-content: flex-start;
+    min-height: 0;
+    align-self: flex-start;
+}
+
+.projects--main .bgDetail {
+    position: absolute;
+
+    left: 10px;
+    top: 330px;
+}
+
+.projects--main .bgDetailR {
+    position: absolute;
+    right: -120px;
+    top: 200px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.links .media--logo {
+    background-color: #212121;
+    margin: 0;
+}
+
+.links a:nth-child(2) {
+    margin-left: 30px;
+    margin-top: 5.5px;
+}
+
+.links a.primaryBtn {
+    margin-top: 0;
+}
+
+.links .media--logo:hover {
+    background-color: #121212;
 }
 
 /* Landscape phones and down */
 @media (max-width: 768px) {
+    .projects--main .bgDetail {
+        left: -50px;
+        top: 1270px;
+    }
+    .projects--main .bgDetailR {
+        top: 460px;
+    }
     .navbar .logo {
         padding-left: 30px;
     }
@@ -840,10 +900,14 @@ div.body {
     }
 
     .projects--cardsContainer {
-        column-count: 1;
+        grid-template-columns: 1fr;
     }
 
     .projects--cardsContainer .projectCard {
         margin-bottom: 30px;
+    }
+
+    .links {
+        justify-content: center;
     }
 }
