@@ -728,8 +728,61 @@ div.body {
     background-color: #121212;
 }
 
-.contact-body .contact--section {
-    margin-bottom: 180px;
+.contact--form {
+    display: grid;
+    gap: 16px; /* Space between rows */
+    max-width: 564px; /* Maximum width of the form */
+    margin: 20px auto; /* Centering the form */
+    padding: 20px; /* Dark background */
+    color: white;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Splitting the first row into two columns */
+    gap: 16px; /* Space between the two input fields */
+}
+
+input,
+textarea {
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+    background: #282c33; /* Slightly lighter than form background */
+    color: white;
+    border: 1px solid #abb2bf;
+    resize: none;
+}
+
+textarea {
+    height: 110px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    background-color: rgba(70, 90, 126, 0.4);
+}
+
+.haveText {
+    background-color: rgba(70, 90, 126, 0.4) !important;
+}
+
+.stat {
+    display: block;
+    margin: auto;
+    padding: 10px 40px;
+}
+
+.success {
+    background-color: rgba(33, 246, 51, 0.277);
+    border: 1px solid rgb(33, 246, 51);
+}
+
+.failed {
+    background-color: rgba(246, 7, 7, 0.277);
+    border: 1px solid rgb(244, 52, 22);
 }
 
 /* Landscape phones and down */
