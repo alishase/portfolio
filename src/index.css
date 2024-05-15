@@ -738,9 +738,10 @@ div.body {
 }
 
 .input-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Splitting the first row into two columns */
-    gap: 16px; /* Space between the two input fields */
+    display: flex;
+    flex-direction: row; /* Space between the two input fields */
+    justify-content: space-between;
+    gap: 16px;
 }
 
 input,
@@ -966,5 +967,9 @@ textarea:focus {
 
     .links {
         justify-content: center;
+    }
+
+    .input-group {
+        flex-direction: column;
     }
 }
