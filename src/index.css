@@ -967,10 +967,4 @@ textarea:focus {
     .links {
         justify-content: center;
     }
-
-    .input-group {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
 }
