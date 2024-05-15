@@ -14,6 +14,7 @@ import { HashRouter, Routes, Route, ScrollRestoration } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import ProjectsApp from "./pages/ProjectsApp.jsx";
 import NoPage from "./pages/NoPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
 
 function App() {
     const cards = [
@@ -56,6 +57,7 @@ function App() {
                         path="/projects"
                         element={<ProjectsApp cards={cards} />}
                     />
+                    <Route path="/contact" element={<ContactPage />} />
                     <Route path="*" element={<NoPage />} />
                 </Routes>
             </HashRouter>

@@ -728,6 +728,10 @@ div.body {
     background-color: #121212;
 }
 
+.contact-body .contact--section {
+    margin-bottom: 180px;
+}
+
 /* Landscape phones and down */
 @media (max-width: 768px) {
     .projects--main .bgDetail {
