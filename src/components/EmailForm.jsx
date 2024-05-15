@@ -10,8 +10,6 @@ function EmailForm() {
     const [opacity, setOpacity] = useState(1);
     useEffect(() => {
         // Set a timer to begin the fade out after 5 seconds
-
-        console.log("timer started");
         const timer = setTimeout(() => {
             setOpacity(0);
         }, 1000);
