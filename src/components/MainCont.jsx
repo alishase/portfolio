@@ -1,6 +1,7 @@
 import CharcterImg from "../assets/Character.png";
 import logotype from "../assets/logotype.png";
 import Dots from "../assets/Dots.png";
+import { Link } from "react-router-dom";
 
 const Main = () => {
     return (
@@ -14,9 +15,11 @@ const Main = () => {
                     He crafts responsive websites where technologies meet
                     creativity
                 </p>
-                <a className="primaryBtn" href="#">
-                    Contact me!
-                </a>
+                <Link to="/contact">
+                    <p className="primaryBtn" href="#">
+                        Contact me!
+                    </p>
+                </Link>
             </div>
             <div className="imageContainer">
                 <div className="imageChar">
