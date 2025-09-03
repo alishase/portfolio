@@ -2,7 +2,7 @@
 
 A fast, responsive personal portfolio to showcase projects, skills, and contact info. Built with React and modern tooling for a smooth developer and user experience.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://your-live-demo-link.com)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://alishase.github.io/portfolio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#-license)
 [![Built with React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 
