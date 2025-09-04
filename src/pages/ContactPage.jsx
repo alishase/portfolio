@@ -5,14 +5,13 @@ import Footer from "../components/Footer";
 import EmailForm from "../components/EmailForm";
 
 const ContactPage = () => {
-    return (
-        <div className="body contact-body">
-            <Navbar />
-            <Contact />
-            <EmailForm />
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="body contact-body">
+      <Navbar />
+      <Contact />
+      <Footer />
+    </div>
+  );
 };
 
 export default ContactPage;
